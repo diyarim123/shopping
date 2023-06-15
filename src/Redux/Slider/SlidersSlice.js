@@ -3,7 +3,6 @@ import { createSlice } from "@reduxjs/toolkit";
 
 //import the fetch function
 import fetchSliders from "./SliderAsync";
-import { act } from "react-dom/test-utils";
 
 
 const initialState = {
