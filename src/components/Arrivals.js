@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import { useSelector } from 'react-redux'
 
 
+
+
 export default function Arrivals() {
 
   const BASE_URL = "https://fronttask.techeyeco.com";
@@ -17,7 +19,7 @@ export default function Arrivals() {
       <div className='grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5 mt-5'>
         {arrivals_data.length > 0 && arrivals_data.map(arrival => (
           <div className='flex flex-col shadow rounded-md p-5 gap-0'>
-            <img className='border-b-2 mb-2' onError={(e) => {e.target.onError=null; e.target.src= `./search.png`}} src={`${BASE_URL}${arrival.attachment}`} alt={arrival.name} />
+            <img className='border-b-2 mb-2' onError={(e) => {e.target.onError=null; e.target.src= `/search.png`}} src={`${BASE_URL}${arrival.attachment}`} alt={arrival.name} />
             <div className='flex flex-col gap-2'>
               <p><span className='font-semibold mr-1'>Brand Name:</span> <span className='font-roboto'>{arrival.brandName}</span></p>
               <p><span className='font-semibold mr-1'>Type:</span> <span className='font-roboto'>{arrival.productTypeName}</span></p>

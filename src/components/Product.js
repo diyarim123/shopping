@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 
 
+
+
 //import MUI React
 import { Pagination } from '@mui/material';
 
@@ -69,7 +71,7 @@ export default function Product() {
       <span className='header'>Products</span>
       {product_isLoading ? (
         <div className='flex justify-center items-center w-screen h-screen'>
-          <PulseLoader size={30} color='#14B8A6' loading={product_isLoading} />
+          <PulseLoader size={30} color='#E11D48' loading={product_isLoading} />
         </div>
       ) : (
         <div>
@@ -80,7 +82,7 @@ export default function Product() {
                     <img
                      className='border-b-2 mb-2 w-full h-[22rem] object-cover'
                      src={`${BASE_URL}${product.attachment}`}
-                     onError={(e) => {e.target.onError=null; e.target.src= `./search.png`}}
+                     onError={(e) => {e.target.onError=null; e.target.src= `/search.png`}}
                      alt={product.name} />
                     <div>
                       <p className='mb-2'>

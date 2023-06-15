@@ -2,6 +2,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { useEffect, useState } from "react";
 
 
+
+
 //spinner loading
 import { PulseLoader } from 'react-spinners'
 
@@ -49,7 +51,7 @@ export default function Home() {
 
     {SliceIsLoading ? 
       <div className='flex justify-center items-center w-screen h-screen'>
-        <PulseLoader size={30} color='#14B8A6' loading={SliceIsLoading} />
+        <PulseLoader size={30} color='#E11D48' loading={SliceIsLoading} />
       </div>
       :
       <div>
@@ -60,7 +62,7 @@ export default function Home() {
               <Carousel autoSlide="true">
                 {Slice_data.map(data => (
                   <div className="min-w-full" key={data.name} >
-                    {data.useSeparateAttachment ? <img className="rounded-md w-full h-full object-cover" src="./notfound.png" alt={data.name} /> : <img className="rounded-md w-full h-full object-cover" src={`${BASE_URL}${data.attachment}`} alt={data.name} />}
+                    {data.useSeparateAttachment ? <img className="rounded-md w-full h-full object-cover" src="/notfound.png" alt={data.name} /> : <img className="rounded-md w-full h-full object-cover" src={`${BASE_URL}${data.attachment}`} alt={data.name} />}
                   </div>
                 ))}
               </Carousel>

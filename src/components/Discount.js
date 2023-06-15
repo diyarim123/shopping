@@ -15,7 +15,7 @@ export default function Discount() {
     <span className='header'>Discounts</span>
     {discount_isLoading ?
       <div className='flex justify-center items-center w-screen h-screen'>
-        <PulseLoader size={30} color='#14B8A6' loading={discount_isLoading} />
+        <PulseLoader size={30} color='#E11D48' loading={discount_isLoading} />
       </div>
       :    
       <div>
