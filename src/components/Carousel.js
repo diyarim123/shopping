@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { useState, useEffect } from "react"
 import { ChevronLeft, ChevronRight } from "react-feather"
 

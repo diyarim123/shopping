@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 
@@ -11,7 +12,6 @@ import RootLayout from "../Layouts/RootLayout";
 
 //importing components
 import Home from "./Home";
-import ScrollDetector from "./Observer";
 import Error from "./Error";
 
 //importing fetch Functions

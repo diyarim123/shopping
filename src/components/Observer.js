@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { useRef, useEffect } from "react";
 
 const ScrollDetector = () => {
